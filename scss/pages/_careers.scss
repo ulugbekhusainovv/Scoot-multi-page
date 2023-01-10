@@ -1,0 +1,42 @@
+.careers-bg {
+  //   background-image: url("..//.//../images//jpg/careers-bg.jpg");
+  background: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
+    url("..//.//../images//jpg/careers-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.careers {
+  position: relative;
+  padding: 7.2rem 0;
+  // margin-top: 9rem;
+
+  &::before {
+    content: url("../images/svg/about-right.svg");
+    position: absolute;
+    right: 0;
+  }
+  // @include responsive(mobile) {
+  //   margin-top: 6rem;
+  // }
+  // .container{}
+}
+.manager {
+  padding-bottom: 16rem;
+  .container {
+  }
+  .managar-info {
+    padding: 32px 64px 35px 40px;
+    max-width: 1110px;
+    background-color: $color-snow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .managar-info:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .managar-wrapper {
+  }
+  .site-btn {
+  }
+}

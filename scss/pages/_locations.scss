@@ -1,0 +1,82 @@
+.locations {
+  margin-bottom: 12rem;
+  margin-top: 11.7rem;
+
+  .container {
+    width: 100%;
+    max-width: 1190px;
+    padding: 0 4rem;
+    margin: 0 auto;
+    color: #939caa;
+  }
+  picture {
+    width: 100%;
+    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+ 
+}
+
+.your {
+  margin-bottom: 12rem;
+  //   background-color: black;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .your-title-wrapper {
+    width: 35.1rem;
+    margin-right: 3rem;
+  }
+  .your__desc-wrapper {
+    max-width: 44.5rem;
+    margin-right: auto;
+  }
+
+  @include responsive(tablet) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 4rem;
+    }
+    .your-title-wrapper {
+      max-width: 45.7rem;
+      margin: 0;
+    }
+    .your__desc-wrapper {
+      max-width: 57.3rem;
+      margin: 0;
+    }
+  }
+}
+// gj,
+.countries {
+  display: none;
+  margin-bottom: 7.2rem;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  .countries__link {
+    padding: 2.2rem 9rem;
+    background-color: $color-light-yellow;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.17;
+    font-family: "Space Mono", monospace;
+    color: $color-dark-navy;
+  }
+
+  @include responsive(tablet) {
+    display: none;
+  }
+  @include responsive(mobile) {
+    display: block;
+  }
+}
