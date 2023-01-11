@@ -1,31 +1,41 @@
 body {
-    font-family: $main-font-family;
-    @include fontStyle(1.5rem, 1.6666, normal, $color-dim-grey, 400);
+  font-family: $main-font-family;
+  @include fontStyle(1.5rem, 1.6666, normal, $color-dim-grey, 400);
+}
+
+h1 {
+  @include fontStyle(5.6rem, 1, -2.5px, $white-color, 700);
+  font-family: $text-font-family;
+  @media screen and (max-width: 570px) {
+    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: -1.78px;
   }
-  
-  h1 {
-    @include fontStyle(5.6rem, 1, -2.5px, $white-color, 700);
-    font-family: $text-font-family;
+}
+
+h2 {
+  @include fontStyle(4.8rem, 1, -2.14px, $color-dark-navy, 700);
+  font-family: $text-font-family;
+  @media screen and (max-width: 570px) {
+    font-size: 3.2rem;
+    line-height: 1;
+    letter-spacing: -1.43px;
   }
-  
-  h2 {
-    @include fontStyle(4.8rem, 1, -2.14px, $color-dark-navy, 700);
-    font-family: $text-font-family;
-  }
-  
-  h3 {
-    @include fontStyle(4rem, 1.2, -1.79px, $color-dark-navy, 700);
-    font-family: $text-font-family;
-  }
-  h4 {
-    @include fontStyle(2.4rem, 1.2, -1.07px, $color-dark-navy, 700);
-    font-family: $text-font-family;
-  }
-  h5 {
-    @include fontStyle(2rem, 1.2, -0.89px, $color-dark-navy, 700);
-    font-family: $text-font-family;
-  }
-  h6 {
-    @include fontStyle(1rem, 1.481, -0.45px, $color-dark-navy, 700);
-    font-family: $text-font-family;
-  }
+}
+
+h3 {
+  @include fontStyle(4rem, 1.2, -1.79px, $color-dark-navy, 700);
+  font-family: $text-font-family;
+}
+h4 {
+  @include fontStyle(2.4rem, 1.2, -1.07px, $color-dark-navy, 700);
+  font-family: $text-font-family;
+}
+h5 {
+  @include fontStyle(2rem, 1.2, -0.89px, $color-dark-navy, 700);
+  font-family: $text-font-family;
+}
+h6 {
+  @include fontStyle(1rem, 1.481, -0.45px, $color-dark-navy, 700);
+  font-family: $text-font-family;
+}

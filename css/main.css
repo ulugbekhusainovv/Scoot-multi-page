@@ -394,6 +394,11 @@ body {
     padding-right: 36px;
   }
 }
+@media screen and (max-width: 570px) {
+  .container {
+    padding: 0 3.2rem;
+  }
+}
 
 body {
   font-family: "Lexend Deca", sans-serif;
@@ -412,6 +417,13 @@ h1 {
   font-weight: 700;
   font-family: "Space Mono", sans-serif;
 }
+@media screen and (max-width: 570px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: -1.78px;
+  }
+}
 
 h2 {
   font-size: 4.8rem;
@@ -420,6 +432,13 @@ h2 {
   color: #495567;
   font-weight: 700;
   font-family: "Space Mono", sans-serif;
+}
+@media screen and (max-width: 570px) {
+  h2 {
+    font-size: 3.2rem;
+    line-height: 1;
+    letter-spacing: -1.43px;
+  }
 }
 
 h3 {
@@ -581,6 +600,12 @@ h6 {
   }
   .footer .sitenav {
     margin-bottom: 8.5rem;
+  }
+  .footer .sitenav ul {
+    align-items: center;
+  }
+  .footer .sitenav li {
+    margin: 0;
   }
   .footer .social-link:active path {
     fill: #e5ecf4;
@@ -749,6 +774,28 @@ h6 {
     margin-top: 30px;
   }
 }
+@media screen and (max-width: 560px) {
+  .hero {
+    padding: 11.5rem 0 17.9rem;
+  }
+  .hero::after {
+    left: -30rem;
+    top: 37rem;
+  }
+  .hero .container {
+    padding: 0 3.2rem;
+  }
+  .hero .hero__wrapper {
+    text-align: center;
+    max-width: 57.3rem;
+  }
+  .hero .hero__title h1 {
+    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: -1.78px;
+    color: #ffffff;
+  }
+}
 
 .location {
   padding: 16rem 16.5rem 14.7rem 16.5rem;
@@ -826,6 +873,42 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 560px) {
+  .location {
+    padding: 12rem 0 12rem;
+  }
+  .location .container {
+    padding: 0 3.2rem;
+  }
+  .location .line {
+    display: none;
+  }
+  .location .location__list {
+    margin: 0;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .location .location__item a {
+    margin: 0;
+  }
+  .location .location__item {
+    gap: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .location .location__item h4 {
+    margin: 0;
+    margin-bottom: 27px;
+  }
+  .location .location__item p {
+    margin-left: 0;
+  }
+  .location .location__item a {
+    position: inherit;
   }
 }
 
@@ -928,6 +1011,67 @@ h6 {
     max-width: 57.3rem;
   }
 }
+@media screen and (max-width: 560px) {
+  .riding {
+    padding-bottom: 10.4rem;
+  }
+  .riding .container {
+    padding: 0 3.2rem;
+  }
+  .riding .riding-info::after {
+    right: -42rem;
+    top: 15rem;
+  }
+  .riding .riding-info::before {
+    display: none;
+  }
+  .riding .riding-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .riding .riding-info {
+    margin-bottom: 12.8rem;
+  }
+  .riding .riding-title--wrapper {
+    max-width: 31.1rem;
+  }
+  .riding .riding-wrapper img {
+    width: 31.1rem;
+    height: 31.1rem;
+  }
+  .riding .riding-wrapper h2 {
+    font-size: 3.2rem;
+    line-height: 1;
+    letter-spacing: -1.43px;
+  }
+  .riding .city-info {
+    max-width: 31.1rem;
+    margin: auto;
+  }
+  .riding .city-info::before {
+    display: none;
+  }
+  .riding .city-info::after {
+    left: -63rem;
+    top: 0;
+  }
+  .riding .city-title--wrapper {
+    max-width: 57.3rem;
+  }
+  .riding .zero-info {
+    max-width: 31.1rem;
+    margin: auto;
+    margin-top: 12rem;
+  }
+  .riding .zero-info::after {
+    right: -65rem;
+    top: 0;
+  }
+  .riding .zero-info::before {
+    display: none;
+  }
+}
 
 .city-info {
   position: relative;
@@ -1007,7 +1151,7 @@ h6 {
   padding-bottom: 10.2rem;
   background-image: url("../images/svg/signup-bg.svg");
   background-repeat: no-repeat;
-  background-position: right 0 bottom 0;
+  background-position: right -170px bottom 0;
 }
 .signup .signup-info {
   display: flex;
@@ -1073,6 +1217,11 @@ h6 {
     text-align: start;
   }
 }
+@media screen and (max-width: 570px) {
+  .signup {
+    background-position: right -85px bottom 0;
+  }
+}
 
 .about-bg {
   background-image: url("..//.//../images//jpg/about-bg.jpg");
@@ -1088,6 +1237,23 @@ h6 {
   content: url("../images/svg/about-right.svg");
   position: absolute;
   right: 0;
+}
+@media screen and (max-width: 570px) {
+  .about {
+    padding: 6rem 0;
+    text-align: center;
+  }
+  .about h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    font-family: "Space Mono", monospace;
+    letter-spacing: -1.78px;
+    color: #ffffff;
+  }
+  .about::before {
+    display: none;
+  }
 }
 
 .riding {
@@ -1128,6 +1294,24 @@ h6 {
   .riding .riding-infoo::before {
     right: -40rem;
     top: 0;
+  }
+  .riding .city-title--wrapper {
+    max-width: 57.3rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .riding {
+    padding-bottom: 10.4rem;
+  }
+  .riding .riding-infoo {
+    margin-bottom: 12.8rem;
+  }
+  .riding .riding-infoo::after {
+    right: -42rem;
+    top: 15rem;
+  }
+  .riding .riding-infoo::before {
+    display: none;
   }
   .riding .city-title--wrapper {
     max-width: 57.3rem;
@@ -1328,6 +1512,23 @@ h6 {
   position: absolute;
   right: 0;
 }
+@media screen and (max-width: 570px) {
+  .careers {
+    padding: 6rem 0;
+    text-align: center;
+  }
+  .careers h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    font-family: "Space Mono", monospace;
+    letter-spacing: -1.78px;
+    color: #ffffff;
+  }
+  .careers::before {
+    display: none;
+  }
+}
 
 .manager {
   padding-bottom: 16rem;
@@ -1343,6 +1544,28 @@ h6 {
 .manager .managar-info:not(:last-child) {
   margin-bottom: 24px;
 }
+@media screen and (max-width: 640px) {
+  .manager {
+    margin-bottom: 12rem;
+  }
+  .manager .container {
+    gap: 1.6rem;
+  }
+  .manager .managar-info {
+    padding: 3.6rem 3.2rem 3.2rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.6rem;
+  }
+  .manager .managar-info h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: -0.89px;
+  }
+}
+
 .locations {
   margin-bottom: 12rem;
   margin-top: 11.7rem;

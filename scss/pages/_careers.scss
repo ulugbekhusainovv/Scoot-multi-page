@@ -15,9 +15,21 @@
     position: absolute;
     right: 0;
   }
-  // @include responsive(mobile) {
-  //   margin-top: 6rem;
-  // }
+  @media screen and (max-width: 570px) {
+    padding: 6rem 0;
+    text-align: center;
+    h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 1;
+      font-family: "Space Mono", monospace;
+      letter-spacing: -1.78px;
+      color: #ffffff;
+    }
+    &::before {
+      display: none;
+    }
+  }
   // .container{}
 }
 .manager {
@@ -37,6 +49,23 @@
   }
   .managar-wrapper {
   }
-  .site-btn {
+  @media screen and (max-width: 640px) {
+    margin-bottom: 12rem;
+    .container {
+      gap: 1.6rem;
+    }
+    .managar-info {
+      padding: 3.6rem 3.2rem 3.2rem;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.6rem;
+      h4 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.4;
+        letter-spacing: -0.89px;
+      }
+    }
   }
 }

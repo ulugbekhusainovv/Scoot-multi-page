@@ -40,6 +40,13 @@
     }
     .sitenav {
       margin-bottom: 8.5rem;
+
+      ul {
+        align-items: center;
+      }
+      li {
+        margin: 0;
+      }
     }
     .social-link:active path {
       fill: $color-light-grey;

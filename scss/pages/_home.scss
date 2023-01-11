@@ -118,10 +118,30 @@
       margin-top: 30px;
     }
   }
-  // @include responsive(mobile) {
-  //   margin-top: 6rem;
-  // }
+  @media screen and (max-width: 560px) {
+    padding: 11.5rem 0 17.9rem;
+    &::after {
+      left: -30rem;
+      top: 37rem;
+    }
+    .container {
+      padding: 0 3.2rem;
+    }
+    .hero__wrapper {
+      text-align: center;
+      max-width: 57.3rem;
+    }
+    .hero__title {
+      h1 {
+        font-size: 4rem;
+        line-height: 1;
+        letter-spacing: -1.78px;
+        color: #ffffff;
+      }
+    }
+  }
 }
+
 .location {
   padding: 16rem 16.5rem 14.7rem 16.5rem;
   position: relative;
@@ -202,6 +222,43 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    padding: 12rem 0 12rem;
+    .container {
+      padding: 0 3.2rem;
+    }
+
+    .line {
+      display: none;
+    }
+    .location__list {
+      margin: 0;
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    .location__item a {
+      margin: 0;
+    }
+    .location__item {
+      gap: 2.4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      h4 {
+        margin: 0;
+        margin-bottom: 27px;
+      }
+      p {
+        margin-left: 0;
+      }
+    }
+    .location__item a {
+      position: inherit;
     }
   }
 }
@@ -314,7 +371,73 @@
       max-width: 57.3rem;
     }
   }
+  @media screen and (max-width: 560px) {
+    .container {
+      padding: 0 3.2rem;
+    }
+
+    padding-bottom: 10.4rem;
+    .riding-info {
+      &::after {
+        right: -42rem;
+        top: 15rem;
+      }
+      &::before {
+        display: none;
+      }
+    }
+    .riding-wrapper {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+    }
+
+    .riding-info {
+      margin-bottom: 12.8rem;
+    }
+    .riding-title--wrapper {
+      max-width: 31.1rem;
+    }
+    .riding-wrapper {
+      img {
+        width: 31.1rem;
+        height: 31.1rem;
+      }
+      h2 {
+        font-size: 3.2rem;
+        line-height: 1;
+        letter-spacing: -1.43px;
+      }
+    }
+    .city-info {
+      max-width: 31.1rem;
+      margin: auto;
+      &::before {
+        display: none;
+      }
+      &::after {
+        left: -63rem;
+        top: 0;
+      }
+    }
+    .city-title--wrapper {
+      max-width: 57.3rem;
+    }
+    .zero-info {
+      max-width: 31.1rem;
+      margin: auto;
+      margin-top: 12rem;
+      &::after {
+        right: -65rem;
+        top: 0;
+      }
+      &::before {
+        display: none;
+      }
+    }
+  }
 }
+
 // CITY
 
 .city-info {
@@ -398,7 +521,7 @@
   padding-bottom: 10.2rem;
   background-image: url("../images/svg/signup-bg.svg");
   background-repeat: no-repeat;
-  background-position: right 0 bottom 0;
+  background-position: right -170px bottom 0;
 
   .signup-info {
     display: flex;
@@ -464,4 +587,9 @@
       }
     }
   }
+
+  @media screen and (max-width: 570px) {
+    background-position: right -85px bottom 0;
+  }
 }
+//

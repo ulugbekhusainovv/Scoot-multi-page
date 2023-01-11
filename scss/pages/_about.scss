@@ -14,7 +14,21 @@
     position: absolute;
     right: 0;
   }
-  
+  @media screen and (max-width: 570px) {
+    padding: 6rem 0;
+    text-align: center;
+    h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 1;
+      font-family: "Space Mono", monospace;
+      letter-spacing: -1.78px;
+      color: #ffffff;
+    }
+    &::before {
+      display: none;
+    }
+  }
 }
 
 // .accordion-header {
@@ -54,6 +68,23 @@
       &::before {
         right: -40rem;
         top: 0;
+      }
+      margin-bottom: 12.8rem;
+    }
+    .city-title--wrapper {
+      max-width: 57.3rem;
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    padding-bottom: 10.4rem;
+    .riding-infoo {
+      &::after {
+        right: -42rem;
+        top: 15rem;
+      }
+      &::before {
+        display: none;
       }
       margin-bottom: 12.8rem;
     }

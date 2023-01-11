@@ -55,4 +55,7 @@ body {
     padding-left: 39px;
     padding-right: 36px;
   }
+  @media screen and (max-width: 570px) {
+    padding: 0 3.2rem;
+  }
 }
